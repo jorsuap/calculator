@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Calculator";
+  src: url("Calculator.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  font-family: "Calculator";
+
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.centrar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-calculator {
+  display: grid;
+  background-color: #0a0a0a;
+  color: white;
+  grid-template-columns: auto auto auto auto;
+  width: 270px;
+  height: 450px;
+  justify-content: center;
+  padding: 20px 10px 30px;
+  border-radius: 0.75em;
+
+  /* Efecto 3D*/
+
+  background-image:
+    linear-gradient(180deg, #0000, #3f3e3e77),
+    radial-gradient(0.25em 0.25em at 0.5em 0.25em, #fff7 25%, #fff0 50%),
+    radial-gradient(95% 0.25em at 50% 0.25em, #fff7 25%, #fff0 50%);
+
+  box-shadow:
+    0 0.5em 0.5em #fff4 inset,
+    0 -0.125em 0.25em 0.125em #0007 inset,
+    0 0.25em 0.75em #0007;
+
+
+}
+
+.teclas {
+  background-color: #2e2d2d;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  margin: 5px;
+  color: white;
+  cursor: pointer;
+  outline-color: none;
+}
+
+.teclas:hover {
+  background-color: rgb(94, 92, 92);
+}
+
+.resultado {
+
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-end;
+  flex-direction: column;
+  grid-area: 2/1/2/5;
+  background-color: #d2d2d3;
+  height: 2em;
+  font-size: 2em;
+  width: 7em;
+  color: rgb(29, 28, 28);
+  word-wrap: break-word;
+  word-wrap: break-all;
+  text-align: right;
+  /* borde 3D */
+
+  background-image: linear-gradient(180deg, #9aa38f, #8d9781);
+  border-top: 0.25rem solid #abafba;
+  border-right: 0.25rem solid #abafba;
+  border-bottom: 0.25rem solid #fff;
+  border-left: 0.25rem solid #c7cad1;
+  border-radius: 0.25rem;
+  box-shadow:
+    0 0.25rem 0.25rem #0007 inset;
+  text-shadow: 0.1rem 0.1rem 0.1rem #0004;
+  text-transform: uppercase;
+
+}
+
+#suma {
+  display: grid;
+  grid-area: 7/4/9/5;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#igual {
+  /* igual"=" */
+  background-color: #208320;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+#igual:hover {
+  background-color: #349e34;
+}
+
+.color_operador {
+  color: #09ac09;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+#reset {
+  color: rgb(173, 58, 16);
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+span {
+  display: grid;
+  grid-area: 1/1/2/5;
+  justify-content: flex-start;
+  font-size: 1.5em;
+  color: rgb(185, 184, 184);
+  letter-spacing: 5px;
+  height: 50px;
+}
+
+sup {
+  font-size: .5em;
+}
