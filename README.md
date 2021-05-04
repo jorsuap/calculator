@@ -1,6 +1,6 @@
 # Calculator js - I used CSS3 and JS
 
-![Website preview](./design.jpg)
+![Website preview](./disign.jpg)
 
 ## Welcome! 👋
 
